@@ -1,12 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-
 const routes = [
   {
     path: '/Trombi',
     name: 'Trombi',
-    component: () =>
-      import(/* webpackChunkName: 'Trombi' */ '../views/Trombi.vue'),
+    component: () => import('../views/Trombi.vue'),
   },
 ]
 

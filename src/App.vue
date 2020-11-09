@@ -2,7 +2,6 @@
   <div class="app">
     <ChromeNav />
     <router-view class="app__main" />
-    <p>- - -</p>
   </div>
 </template>
 
