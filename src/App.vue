@@ -1,36 +1,44 @@
 <template>
-  <div class="app">
-    <ChromeNav />
-    <router-view class="app__main" />
+    <div class="typo">
+    <input
+      type="text"
+      name="search"
+      id="search"
+      class="search"
+      placeholder="Prénom"
+      v-model="keyword"
+    />
+    <hr />
+    <ul class="grid">
+      <li v-for="font in people" :key="font.letter">
+        <img :src="font.img" :alt="font.letter" />
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import { defineComponent } from 'vue'
-import ChromeNav from '@/components/chrome/Nav.vue'
+import { defineComponent, computed, ref } from 'vue'
+import data from '@/inc/data'
 
 export default defineComponent({
-  components: {
-    ChromeNav,
+  name: 'typo',
+  setup() {
+    const keyword = ref('')
+    const filtered= computed(()=>
+      data.typo.filter(p=> 
+      p.letter.toLowerCase().includes(keyword.value.toLowerCase())
+
+     )
+    )
+    return {
+      people: filtered,
+      keyword
+    }
   },
 })
 </script>
 
 <style lang="scss">
-body {
-  margin: 0;
-}
 
-.app {
-  display: flex;
-  min-height: 100vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-.app__main {
-  padding: 5rem;
-}
 </style>

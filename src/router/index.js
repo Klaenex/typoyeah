@@ -1,11 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
-  {
-    path: '/Trombi',
-    name: 'Trombi',
-    component: () => import('../views/Trombi.vue'),
-  },
+ 
 ]
 
 const router = createRouter({
