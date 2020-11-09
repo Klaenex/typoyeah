@@ -1,0 +1,11 @@
+body{
+     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+     padding: 51px;
+}
+
+.title{
+     margin-bottom: 16px;
+     &_big{
+          margin-bottom: 64px;
+     }
+}

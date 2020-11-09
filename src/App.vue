@@ -1,27 +1,16 @@
 <template>
   <div class="typo">
+    <h1 class="title title_big"><strong>Typoyeah</strong></h1>
+    <h2 class="title">Pour essayer la typo tape ici</h2>
     <input
       type="text"
-      name="search"
-      id="search"
       class="search"
       placeholder="Essaye moi"
       v-model="keyword"
     />
-
     <ul class="grid">
-      <li class="list" v-for="font in keyword" :key="font" :class="{ font }">
-        <div>{{ keyword }}</div>
-        <div>{{ filtered }}</div>
-        <div>{{ tab.value }}</div>
-        <div>{{table}}</div>
-
-        <!-- <img class="img_list" :src="require( filtered )"/>    -->
-        <!-- <img
-          class="img_list"
-          :src="'img/' + filtered + '.png'"
-          :alt="font.letter"
-        /> -->
+      <li class="list" v-for="list in filtered" :key="list.id">
+        <img class="img_list" :src="'img/' + list + '.png'" :alt="list.id" />
       </li>
     </ul>
   </div>
@@ -30,39 +19,22 @@
 <script>
 import { defineComponent, ref, computed } from 'vue'
 
-//import data from '@/inc/data'
 export default defineComponent({
   name: 'typo',
   setup() {
     const keyword = ref('')
+
     const str = keyword.value.substr(keyword.value.length - 1)
-
-    console.log(keyword.value)
-    console.log(typeof keyword.value)
-    console.log(str)
-    let table=[];
-    const tab=computed(
-      ()=>
-      table.push(keyword.value.substr(keyword.value.length - 1))
-    );
-
-    const filtered = computed(
-      () => 
-      keyword.value.substr(keyword.value.length - 1)
-      
-
-      //   // data.typo.filter(p=> p.letter.toLowerCase().includes(keyword.value.toLowerCase()))
-
-      //   //data.typo.letter=='A'
-      //   //data.typo.filter(f => f.letter.toLowerCase()==keyword.value.toLowerCase()),
-    )
+    let table = []
+    const tab = computed(() => keyword.value.substr(keyword.value.length - 1))
+    const filtered = computed(() => keyword.value.split(''))
 
     return {
       keyword,
       str,
       filtered,
       table,
-      tab
+      tab,
     }
   },
 })
