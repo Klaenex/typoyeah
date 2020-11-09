@@ -2,11 +2,108 @@
   "typo": [
     {
       "letter": "A",
-      "img": "./assets/img/A.png"
+      "img": "/img/A.png"
     },
     {
       "letter": "B",
-      "img": "./assets/img/B.png"
+      "img": "/img/B.png"
+    },
+    {
+      "letter": "C",
+      "img": "/img/C.png"
+    },
+    {
+      "letter": "D",
+      "img": "/img/D.png"
+    },
+    {
+      "letter": "E",
+      "img": "/img/E.png"
+    },
+    {
+      "letter": "F",
+      "img": "/img/F.png"
+    },
+    {
+      "letter": "G",
+      "img": "/img/G.png"
+    },
+    {
+      "letter": "H",
+      "img": "/img/H.png"
+    },
+    {
+      "letter": "I",
+      "img": "/img/I.png"
+    },
+    {
+      "letter": "J",
+      "img": "/img/J.png"
+    },
+    {
+      "letter": "K",
+      "img": "/img/K.png"
+    },
+    {
+      "letter": "L",
+      "img": "/img/L.png"
+    },
+    {
+      "letter": "M",
+      "img": "/img/M.png"
+    },
+    {
+      "letter": "N",
+      "img": "/img/N.png"
+    },
+    {
+      "letter": "O",
+      "img": "/img/O.png"
+    },
+    {
+      "letter": "P",
+      "img": "/img/P.png"
+    },
+    {
+      "letter": "Q",
+      "img": "/img/Q.png"
+    },
+    {
+      "letter": "R",
+      "img": "/img/R.png"
+    },
+    {
+      "letter": "S",
+      "img": "/img/S.png"
+    },
+    {
+      "letter": "T",
+      "img": "/img/T.png"
+    },
+    {
+      "letter": "U",
+      "img": "/img/U.png"
+    },
+    {
+      "letter": "V",
+      "img": "/img/V.png"
+    },
+    {
+      "letter": "W",
+      "img": "/img/W.png"
+    },
+    {
+      "letter": "X",
+      "img": "/img/X.png"
+    },
+    {
+      "letter": "Y",
+      "img": "/img/Y.png"
+    },
+    {
+      "letter": "Z",
+      "img": "/img/Z.png"
     }
+    
   ]
 }
