@@ -41,6 +41,12 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+.title{
+     margin-bottom: 16px;
+     &_big{
+          margin-bottom: 64px;
+     }
+}
 .grid {
   display: flex;
   flex-wrap: wrap;
